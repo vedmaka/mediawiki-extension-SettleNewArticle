@@ -85,4 +85,33 @@ $(function(){
 
 	}
 
+	function updateButtonLink() {
+
+		// http://settlein.local/index.php/Special:FormEdit/Card/
+		// ?Card[Title]=Sample&Card[Category]=18&Card[Country]=Algeria&Card[State]=Annaba&Card[City]=Drean
+
+        var value = $('#settlenewarticle_title').val();
+        var category_id = $('#settlenewarticle_title').data('category-id');
+
+        var linkUrl = mw.config.get('wgServer') + mw.config.get('wgScriptPath') + '/index.php/Special:FormEdit/Card/';
+
+        linkUrl += '?Card[Title]=' + value;
+        linkUrl += '&Card[Category]=' + category_id;
+
+        if( $('#d-country-name').length ) {
+        	linkUrl += '&Card[Country]=' + $('#d-country-name').text();
+		}
+
+        if( $('#d-state-name').length ) {
+            linkUrl += '&Card[State]=' + $('#d-state-name').text();
+        }
+
+        if( $('#d-city-name').length ) {
+            linkUrl += '&Card[City]=' + $('#d-city-name').text();
+        }
+
+        $('#settlenewarticle-form-step-1').attr('action', linkUrl);
+
+	}
+
 });
