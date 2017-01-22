@@ -1,41 +1,48 @@
 {
-  "name": "SettleNewArticle",
-  "version": "0.0.1",
-  "author": [
-    "Jon"
-  ],
-  "url": "https://www.mediawiki.org/wiki/Extension:SettleNewArticle",
-  "descriptionmsg": "settlenewarticle-desc",
-  "license-name": "MIT",
-  "type": "other",
-  "AutoloadClasses": {
-    "SpecialSettleNewArticle": "specials/SpecialSettleNewArticle.php"
-  },
-  "ExtensionMessagesFiles": {
-    "SettleNewArticleAlias": "SettleNewArticle.i18n.alias.php"
-  },
-  "Hooks": {
-  },
-  "MessagesDirs": {
-    "SettleNewArticle": [
-      "i18n"
-    ]
-  },
-  "ResourceModules": {
-    "ext.settlenewarticle.main": {
-      "scripts": [
-        "modules/script.js"
-      ],
-      "styles": [
-        "modules/style.css"
-      ]
+    "name": "SettleNewArticle",
+    "version": "0.0.1",
+    "author": [
+        "Jon"
+    ],
+    "url": "https://www.mediawiki.org/wiki/Extension:SettleNewArticle",
+    "descriptionmsg": "settlenewarticle-desc",
+    "license-name": "MIT",
+    "type": "other",
+    "AutoloadClasses": {
+        "SpecialSettleNewArticle": "specials/SpecialSettleNewArticle.php",
+        "SettleNewArticleApi": "includes/SettleNewArticleApi.php"
+    },
+    "ExtensionMessagesFiles": {
+        "SettleNewArticleAlias": "SettleNewArticle.i18n.alias.php"
+    },
+    "Hooks": {
+    },
+    "MessagesDirs": {
+        "SettleNewArticle": [
+            "i18n"
+        ]
+    },
+    "ResourceModules": {
+        "ext.settlenewarticle.main": {
+            "scripts": [
+                "modules/script.js"
+            ],
+            "styles": [
+                "modules/style.css"
+            ],
+            "templates": {
+                "jsarticle.mustache": "templates/jsarticle.mustache"
+            }
+        }
+    },
+    "ResourceFileModulePaths": {
+        "localBasePath": "",
+        "remoteExtPath": "SettleNewArticle"
+    },
+    "SpecialPages": {
+        "SettleNewArticle": "SpecialSettleNewArticle"
+    },
+    "APIModules": {
+        "settlenewarticle": "SettleNewArticleApi"
     }
-  },
-  "ResourceFileModulePaths": {
-    "localBasePath": "",
-    "remoteExtPath": "SettleNewArticle"
-  },
-  "SpecialPages": {
-    "SettleNewArticle": "SpecialSettleNewArticle"
-  }
 }

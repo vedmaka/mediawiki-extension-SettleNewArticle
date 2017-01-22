@@ -1,0 +1,79 @@
+#settlenewarticle-form {
+    padding-top: 10px;
+}
+
+#settlenewarticle-form .step1-geolocation-set {
+    display: none;
+}
+
+
+#similar-articles .panel .panel-heading {
+    background-color: #64bb5d;
+    border-bottom: 0;
+}
+
+#similar-articles .panel .panel-heading a {
+    color: white;
+}
+
+#similar-articles .panel {
+    background-color: #f9f9f9;
+}
+
+#similar-articles .panel-heading + .panel-heading {
+    background-color: rgba(40, 174, 231, 0.75);
+    font-size: 13px;
+}
+
+#similar-articles .panel-heading + .panel-heading + .panel-heading {
+    background-color: rgba(231, 115, 17, 0.75);
+    font-size: 13px;
+    color: white;
+}
+
+#similar-articles > .row {
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    flex-wrap: wrap;
+
+}
+
+#similar-articles > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+#similar-articles .panel .panel-heading i {
+    color: white;
+    font-size: 12px;
+    position: relative;
+    top: 4px;
+    padding-right: 4px;
+}
+
+#similar-articles .similar-articles-heading {
+    font-weight: normal;
+    font-size: 15px;
+    padding: 5px 0 10px 0;
+}
+
+#similar-articles .panel .breadcrumb {
+    /*margin-top: -8px;*/
+    margin: 0;
+    padding: 0;
+}
+
+#similar-articles .panel .breadcrumb li {
+    color: white;
+}
+
+#similar-articles .panel .breadcrumb li::before {
+    color: white;
+}
+
+#similar-articles .panel .breadcrumb a {
+    color: white;
+}
