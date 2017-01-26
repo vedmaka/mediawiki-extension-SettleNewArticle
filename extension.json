@@ -10,12 +10,16 @@
     "type": "other",
     "AutoloadClasses": {
         "SpecialSettleNewArticle": "specials/SpecialSettleNewArticle.php",
-        "SettleNewArticleApi": "includes/SettleNewArticleApi.php"
+        "SettleNewArticleApi": "includes/SettleNewArticleApi.php",
+        "SettleNewArticleHooks": "includes/SettleNewArticleHooks.php"
     },
     "ExtensionMessagesFiles": {
         "SettleNewArticleAlias": "SettleNewArticle.i18n.alias.php"
     },
     "Hooks": {
+        "sfCreateFormField": [
+            "SettleNewArticleHooks::onsfCreateFormField"
+        ]
     },
     "MessagesDirs": {
         "SettleNewArticle": [
