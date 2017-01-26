@@ -66,7 +66,8 @@ class SpecialSettleNewArticle extends SpecialPage {
 		    'country_name' => false,
 		    'state_name' => false,
 		    'city_name' => false,
-		    'proceed_url' => ''
+		    'form_action' => SpecialPage::getTitleFor('FormEdit')->getFullURL().'/Card/',
+
 	    );
 
 	    try {

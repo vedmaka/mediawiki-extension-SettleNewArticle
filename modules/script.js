@@ -81,6 +81,8 @@ $(function(){
 
 			$('#similar-articles').show();
 
+            //updateButtonLink();
+
 		});
 
 	}
