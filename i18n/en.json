@@ -4,5 +4,5 @@
     "settlenewarticle-intro-text-step-1": "Please verify selected location and check title of the page you're going to create against our database.",
     "settlenewarticle-message-api-nothing-found": "It seems that we don't have similar articles yet, you're free to proceed!",
     "settlenewarticle-message-api-exact-match": "We've found existing page that exactly matches yours. Please consider to contribute and improve already existing pages instead of creating similar copies.",
-    "settlenewarticle-message-api-fuzzy-match": "There are page similar to what you're going to create exists, if someone already created page relative to your topic it may be a good idea to contribute instead of creating a new one:"
+    "settlenewarticle-message-api-fuzzy-match": "We've found some pages similar to the one that you're going to create, if someone has already created page relative to your topic it may be a good idea to contribute instead of creating a new one."
 }
