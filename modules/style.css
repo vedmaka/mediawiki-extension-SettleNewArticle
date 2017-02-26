@@ -6,6 +6,13 @@
     display: none;
 }
 
+#settlenewarticle-form label.label-form-required::after,
+#settlenewarticle-form-step-1 label.label-form-required::after {
+    content: "*";
+    color: red;
+    display: inline-block;
+    font-size: 12px;
+}
 
 #similar-articles .panel .panel-heading {
     background-color: #64bb5d;
