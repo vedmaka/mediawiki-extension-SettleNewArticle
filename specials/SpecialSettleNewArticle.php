@@ -42,6 +42,7 @@ class SpecialSettleNewArticle extends SpecialPage {
     	$country = $this->getRequest()->getInt('country_id');
     	$state = $this->getRequest()->getInt('state_id');
     	$city = $this->getRequest()->getInt('city_id');
+		$page_title = $this->getRequest()->getVal('page_title');
 
 	    $category = new SettleGeoCategory( $categoryId );
 	    $categoryScope = $category->getGeoScope();
@@ -67,7 +68,7 @@ class SpecialSettleNewArticle extends SpecialPage {
 		    'state_name' => false,
 		    'city_name' => false,
 		    'form_action' => SpecialPage::getTitleFor('FormEdit')->getFullURL().'/Card/',
-
+			'page_title' => ''
 	    );
 
 	    try {
@@ -94,6 +95,10 @@ class SpecialSettleNewArticle extends SpecialPage {
 
 	    // TODO: add form url
 	    $data['proceed_url'] = '';
+
+	    if( $page_title ) {
+	    	$data['page_title'] = $page_title;
+	    }
 
 	    $html = $this->templateParser->processTemplate('step_1', $data);
 	    $this->getOutput()->addHTML($html);

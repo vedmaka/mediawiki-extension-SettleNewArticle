@@ -23,6 +23,13 @@ $(function(){
 
 		});
 
+		if( $('#settlenewarticle_title').val().length ) {
+
+			clearTimeout(similarTimeout);
+			similarTimeout = setTimeout(showSimilarArticles, 500);
+
+		}
+
 	}
 
 	function showSimilarArticles() {
